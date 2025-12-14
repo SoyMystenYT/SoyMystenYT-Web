@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<title>SoyMystenYT Web</title>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoyMysten - Creador de Contenido & Servidor Minecraft</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Partículas de fondo -->
+    <div id="particles-js"></div>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/profile.jpg" alt="SoyMysten" class="nav-logo-img">
+                <span>SoyMystenYT</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#servidor" class="nav-link">Servidor</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">¡Hola! Soy <span class="highlight">SoyMysten</span></h1>
+            <p class="hero-subtitle animate-fade-in-delay">Creador de contenido Basico y Fundador de DexlunMC Network</p>
+            <div class="hero-buttons animate-fade-in-delay-2">
+                <a href="#servidor" class="btn btn-primary">Unete al servidor!</a>
+                <a href="#servicios" class="btn btn-secondary">Servicios</a>
+            </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>¿Quién es SoyMysten?</h3>
+                    <p>Soy un creador de contenido apasionado por Minecraft y los videojuegos. Llevo más de 5 años creando comunidades y administrando servidores de Minecraft.</p>
+                    <p>Mi objetivo es crear un espacio divertido y seguro para que todos disfruten del juego. En DexlunMC Network, nos esforzamos por ofrecer la mejor experiencia de juego posible.</p>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>6+</h4>
+                            <p>Años de experiencia</p>
+                        </div>
+                        <div class="stat">
+                            <h4>46+</h4>
+                            <p>Jugadores activos</p>
+                        </div>
+                        <div class="stat">
+                            <h4>0+</h4>
+                            <p>Servidor online</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="SoyMysten" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servidor Minecraft -->
+    <section id="servidor" class="server">
+        <div class="container">
+            <h2 class="section-title">DexlunMC | Network</h2>
+            <div class="server-content">
+                <div class="server-info">
+                    <h3>¡El mejor servidor de Minecraft!</h3>
+                    <div class="server-ip">
+                        <i class="fas fa-server"></i>
+                        <span>IP: play.dexlunmc.com</span>
+                    </div>
+            <div class="social-links">
+                <a href="https://discord.gg/Eey4A8aEYW" target="_blank" class="social-link">
+              <i class="fab fa-discord"></i>
+                     <span>Discord de DexlunMC Network</span>
+                        </a>
+                            </div>
+        <div class="hero-image">
+            <img src="images/server-banner.gif" alt="DexlunMC Network" class="floating">
+        </div>
+                    <div class="server-features">
+                        <div class="feature">
+                            <i class="fas fa-gamepad"></i>
+                            <h4>Modalidades</h4>
+                            <p>Survival Op, ClashBox</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Protegido</h4>
+                            <p>Anticheat y moderación activa</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-gift"></i>
+                            <h4>Eventos</h4>
+                            <p>Torneos semanales y premios</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h4>Comunidad</h4>
+                            <p>+46 jugadores activos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="server-status">
+                        <div class="status-indicator" id="serverstatus"></div>
+                        <span id="statusText">Mantenimiento...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios de Pago -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title">Servicios de Pago</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-header">
+                        <i class="fas fa-crown"></i>
+                        <h3>Noob</h3>
+                    </div>
+                    <div class="service-price">$1/cada uno</div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Logos y Banners Profesionales</li>
+                        <li><i class="fas fa-check"></i> Buena grafica</li>
+                        <li><i class="fas fa-check"></i> experiencia</li>
+                        <li><i class="fas fa-check"></i> Soporte prioritario</li>
+                    </ul>
+                    <button class="btn btn-primary">Escribeme en Discord</button>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="featured-badge">Mejor Servicio</div>
+                    <div class="service-header">
+                        <i class="fas fa-gem"></i>
+                        <h3>Premium</h3>
+                    </div>
+                    <div class="service-price">$10/mes</div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Logos y Banners Profesionales</li>
+                        <li><i class="fas fa-check"></i> Configuraciones Minecraft</li>
+                        <li><i class="fas fa-check"></i> experiencia</li>
+                        <li><i class="fas fa-check"></i> Soporte General</li>
+                    </ul>
+                    <button class="btn btn-primary">Escribeme en Discord</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <i class="fas fa-star"></i>
+                        <h3>Premium+</h3>
+                    </div>
+                    <div class="service-price">$25/mes</div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Logos y Banners Profesionales</li>
+                        <li><i class="fas fa-check"></i> Configuraciones Minecraft</li>
+                        <li><i class="fas fa-check"></i> experiencia</li>
+                        <li><i class="fas fa-check"></i> Configuracion Discord Completo</li>
+                        <li><i class="fas fa-check"></i> Soporte 24/7</li>
+                    </ul>
+                    <button class="btn btn-primary">Escribeme en Discord</button>
+                </div>
+                <h1>Discord: soymystenyt</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto y Redes -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto & Redes</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Conéctate conmigo</h3>
+                    <p>¿Tienes dudas o necesitas ayuda? Estoy aquí para ayudarte.</p>
+                    
+                    <div class="social-links">
+                        <a href="https://discord.gg/Eey4A8aEYW" target="_blank" class="social-link">
+                            <i class="fab fa-discord"></i>
+                            <span>Discord: DexlunMC | Network</span>
+                        </a>
+                        <a href="https://www.youtube.com/@soymysten" target="_blank" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube: SoyMysten</span>
+                        </a>
+                            <i class="fab fa-gmail"></i>
+                            <span>Gmail: lokopmc@gmail.com</span>
+                        </a>
+                    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SoyMystenYT</h3>
+                    <p>Creador de contenido y Fundador de DexlunMC Network</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servidor">Servidor</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="https://discord.gg/Eey4A8aEYW" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com/SoyMysten" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SoyMysten. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
